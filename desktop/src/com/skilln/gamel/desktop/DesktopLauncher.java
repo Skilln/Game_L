@@ -2,11 +2,15 @@ package com.skilln.gamel.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.skilln.gamel.Game;
+import com.skilln.gamel.GameL;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		new LwjglApplication(new Game(), config);
+
+		config.width = 1280;
+		config.height = 720;
+
+		new LwjglApplication(new GameL(), config);
 	}
 }
